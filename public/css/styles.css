@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#form {
+    display: grid;
+    grid-template-columns: 85% 1fr;
+    margin: 1rem;
+}
+
+#input {
+    background: #eee;
+    height: 4rem;
+    padding: 2rem;
+    border-radius: 10px;
+    color: #424242;
+}
+
+#form button {
+    background: #4CAF50;
+    color: #fff;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+}
+
+#messages {
+    list-style-type: none;
+}
+
+#messages li {
+    display: flex;
+}
+
+#messages li.right {
+    justify-content: flex-end;
+}
+
+#messages li span {
+    background-color: #eee;
+    color: #424242;
+    padding: 1rem;
+    margin: 0.5rem 1rem;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+}
+
+#messages li.right span {
+    margin: 0.5rem 1rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 0;
+}
